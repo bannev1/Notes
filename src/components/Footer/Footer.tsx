@@ -3,9 +3,9 @@ import React from 'react'
 function Footer() {
   return (
 	<div id='Footer'>
-		<div>Hello</div>
+		<div>IB & GCSE Revision Notes</div>
 		<div>
-			Credit to Valentina for making this awesome
+			Made by <a href="https://realhuman101.github.io/" target='_blank'>Valentina Banner</a>
 		</div>
 	</div>
   )

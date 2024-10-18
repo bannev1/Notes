@@ -43,7 +43,7 @@ a {
 
 #Footer {
   width: 100vw;
-  height: fit-content;
+  height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -51,8 +51,35 @@ a {
   margin: 0;
   padding: 10px;
   position: relative;
-  background-color: rgb(var(--foreground));
+  background-color: rgba(var(--foreground), .85);
   color: rgb(var(--background));
+}
+
+#Footer a {
+  text-decoration: none;
+  position: relative;
+  font-weight: 600;
+}
+
+#Footer a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 0px;
+  height: 2px;
+  background-color: rgb(var(--background));
+  transition: width 200ms ease-in-out;
+}
+
+#Footer a:hover {
+  cursor: pointer;
+}
+
+#Footer a:hover::after {
+  width: 100%;
 }
 
 #Navbar {
