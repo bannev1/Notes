@@ -1,6 +1,14 @@
 .page {
   display: flex;
+  flex-direction: column;
+  gap: 15px;
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+.option {
+  font-size: 25px;
+  width: 115px;
+  height: 90px;
 }
