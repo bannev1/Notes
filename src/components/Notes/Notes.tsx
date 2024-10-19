@@ -8,7 +8,7 @@ interface Props {
 
 function Notes({children}: Props) {
 	return (
-		<div>
+		<div className='markdown'>
 			<Markdown remarkPlugins={[remarkGfm]}>{children}</Markdown>
 		</div>
 	)

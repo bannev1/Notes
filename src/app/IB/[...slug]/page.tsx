@@ -2,8 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import React from 'react';
-import { notFound } from 'next/navigation'; // Use for 404 handling
+import { notFound } from 'next/navigation'; 
 import Notes from '@/components/Notes/Notes';
+import SideNav from '@/components/SideNav/SideNav';
 import slugify from 'slugify';
 
 const contentDir = path.join(process.cwd(), 'src', 'content', 'IB');
@@ -31,7 +32,8 @@ const PostPage = ({ params }: { params: { slug: string[] } }) => {
   }
 
   return (
-    <div>
+    <div id="notePage">
+      <SideNav/>
       <Notes>{content}</Notes>
     </div>
   );
