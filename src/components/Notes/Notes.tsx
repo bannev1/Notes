@@ -1,5 +1,6 @@
 import React from 'react'
 import Markdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 interface Props {
 	children: string,
@@ -8,7 +9,7 @@ interface Props {
 function Notes({children}: Props) {
 	return (
 		<div>
-			<Markdown>{children}</Markdown>
+			<Markdown remarkPlugins={[remarkGfm]}>{children}</Markdown>
 		</div>
 	)
 }

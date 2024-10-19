@@ -98,6 +98,11 @@ a {
   filter: brightness(85%);
 }
 
+#navFill {
+  height: 50px;
+  width: 100vw;
+}
+
 /* Buttons */
 button {
   padding: 10px;
