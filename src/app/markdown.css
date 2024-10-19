@@ -48,6 +48,26 @@
     padding: 0.2em 0.4em;
 }
 
+.markdown table {
+	border-collapse: collapse;
+	min-width: 150px;
+}
+
+.markdown th {
+	background-color: rgba(var(--foreground), .2);
+}
+
+.markdown th,
+.markdown td {
+	padding: 5px;
+}
+
+.markdown table,
+.markdown th,
+.markdown td {
+	border: 1px solid rgba(var(--foreground), .5);
+}
+
 /* Copy Code Button */
 .copyCode {
 	position: absolute;
