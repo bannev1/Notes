@@ -24,7 +24,7 @@ const Folder = ({ folder, padding=0 }: Props) => {
 		</button>
 		{isExpanded && (
 			<ul className="sideNavBar" style={{paddingLeft: padding+paddingWidth}}>
-			{folder.children.map((child: { name: string, path: string[], isDirectory: boolean, children?: any[] }, index: number) => (
+			{folder.children ? folder.children.map((child: { name: string, path: string[], isDirectory: boolean, children?: any[] }, index: number) => (
 				<li key={index}>
 				{child.isDirectory ? (
 					<Folder folder={child} padding={padding+paddingWidth} />
@@ -34,7 +34,7 @@ const Folder = ({ folder, padding=0 }: Props) => {
 				  </Link>
 				)}
 			  </li>
-			))}
+			)) : false}
 		  </ul>
 		)}
 	  </div>
