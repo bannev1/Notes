@@ -1,6 +1,7 @@
 /* Markdown */
 .markdown {
 	width: 100%;
+	position: relative;
 }
 
 .markdown br {
@@ -27,4 +28,16 @@
 
 .markdown a:hover::after {
 	width: 100%;
+}
+
+/* Copy Code Button */
+.copyCode {
+	position: absolute;
+	right: 0;
+	margin: 5px;
+}
+
+.copyIcon {
+	background-color: rgba(var(--foreground), .2);
+	padding: 5px;
 }
