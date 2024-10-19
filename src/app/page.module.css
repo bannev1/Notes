@@ -1,10 +1,52 @@
 .page {
+  --background: 255, 255, 255;
+  --foreground: 23, 23, 23;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --background: 10, 10, 10;
+    --foreground: 237, 237, 237;
+  }
+}
+
+.page {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 100px);
   justify-content: center;
   align-items: center;
+}
+
+#pageCredit {
+  font-weight: 600;
+}
+
+#pageCredit a {
+  font-weight: 700;
+  position: relative;
+}
+
+#pageCredit a:hover {
+  cursor: pointer;
+}
+
+#pageCredit a:hover::after {
+  width: 100%;
+}
+
+#pageCredit a::after {
+  background-color: rgb(var(--foreground));
+  color: rgb(var(--background));
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  text-wrap: nowrap;
+  transition: width 150ms ease-in-out;
 }
 
 .option {
