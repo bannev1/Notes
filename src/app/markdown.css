@@ -1,0 +1,30 @@
+/* Markdown */
+.markdown {
+	width: 100%;
+}
+
+.markdown br {
+	color: rgba(var(--foreground), .3);
+}
+
+.markdown a {
+	color: rgb(71, 151, 255);
+	position: relative;
+}
+
+.markdown a::after {
+	content: '';
+	background-color: rgb(71, 151, 255);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	width: 0;
+	height: 1px;
+	transition: width 150ms ease-in-out;
+}
+
+.markdown a:hover::after {
+	width: 100%;
+}

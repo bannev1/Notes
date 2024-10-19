@@ -58,6 +58,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
+  backdrop-filter: blur(500px);
 }
 
 #Footer a {
@@ -159,7 +160,7 @@ button:hover {
 #sideNav {
   width: 250px;
   position: fixed;
-  height: calc(100% - 100px);
+  height: calc(100% - 50px);
   background-color: rgba(var(--foreground), .7);
   color: rgb(var(--background));
   left: 0;
@@ -205,13 +206,4 @@ button:hover {
   padding: 0;
   font-size: 15px;
   margin: 0;
-}
-
-/* Markdown */
-.markdown {
-  width: 100%;
-}
-
-.markdown br {
-  color: rgba(var(--foreground), .3);
 }
