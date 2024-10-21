@@ -4,9 +4,10 @@
 ## Table of Contents
 - [D.1 - Objects](#d1---objects)
 	- [Table of Contents](#table-of-contents)
-	- [D.1.1](#d11)
+	- [D.1.1 - The general nature of an object](#d11---the-general-nature-of-an-object)
+	- [D.1.2 - Distinguish between an object and an instance](#d12---distinguish-between-an-object-and-an-instance)
 
-## D.1.1
+## D.1.1 - The general nature of an object
 
 **Object Oriented Progamming** *(OOP for short)* is a method of designing software which makes it easier for programmers to write and maintain complex programs.  
 
@@ -20,7 +21,7 @@ Following this idea, essentially everything in a program is an object.
 
 With these definitions in mind, we can say that OOP is a way of programming that is based on the concept of objects, which can contain data in the form of attributes and code in the form of methods.
 
-But OOP was designed after reality - the entire idea that everything in real life is an object, *i.e a person, a car, a house, etc...*
+OOP was actually designed after reality - the entire idea that everything in real life is an object, *i.e a person, a car, a house, etc...* and this is a great way of thinking of it.
 
 For example, we could have a **class** named `Person`. Every existing person, including you, me, and everyone else, would be an **object** created from the blueprint/class `Person`. This class tells us what each `Person` can do and what each `Person` has.
 
@@ -50,3 +51,15 @@ Person me = new Person();
 Now the variable, `me`, is an **object** of the class Person. It has a name, age, and can speak and run. 
 
 We can say that `me` is an **instance** of the class `Person`, which basically means that `me`, the variable, uses the blueprint defined as the class `Person`, and contains everything the class `Person` tells it to have as its own and can do whatever it wants with these values without affecting anything else.
+
+Another way of thinking of this idea of classes and objects is to note that data types, `int`, `String`, `double`, etc... are all **classes**. Meaning when we create a new string, we are creating an object using the `String` class blueprint.
+
+```java
+String myString = "Hello There."; // String is a class, and we're using it as a blueprint to create a string
+```
+
+This `String` class has its own methods *(i.e `split()`, `length()`)* and you can create an **instance** *(covered later)* of this class simply by using `""`.
+
+## D.1.2 - Distinguish between an object and an instance
+
+**Instantiation**, or to create an **instance**, is essentially what we do when we use the class blueprint to create an **object**.
