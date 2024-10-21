@@ -1,6 +1,6 @@
 /* Markdown */
 .markdown {
-	width: 100%;
+	width: calc(100vw - 250px);
 	position: relative;
 }
 

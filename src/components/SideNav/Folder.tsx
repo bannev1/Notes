@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import slugify from "slugify";
 
 interface Props {
 	folder: { name: string, path: string[], isDirectory: boolean, children?: any[] },

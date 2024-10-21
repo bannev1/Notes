@@ -134,7 +134,8 @@ a {
 }
 
 #notePage {
-  width: calc(100vw - 250px);
+  /* width: calc(100vw - 250px); */
+  width: 100vw;
   padding: 15px;
   display: flex;
   flex-direction: row;
