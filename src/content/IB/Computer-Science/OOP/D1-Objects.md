@@ -60,6 +60,12 @@ String myString = "Hello There."; // String is a class, and we're using it as a 
 
 This `String` class has its own methods *(i.e `split()`, `length()`)* and you can create an **instance** *(covered later)* of this class simply by using `""`.
 
+You might note that terminology such as **attributes** and **methods** are consistently mentioned throughout this page. To define them, they are, essentially, what a class contains. 
+
+**Attributes** could be considered as the variables of a class, and **methods** could be considered as the functions of a class. Essentially, these two could be used by the main program using this class to manipulate the object's properties. 
+
+Take the aforementioned `Person` class as an example - each person in real life has a name and an age, therefore normally we'd store these as variables. But as we're using OOP, we'd store these as **attributes**. Any person created from the `Person` class has these attributes.
+
 ## D.1.2 - Distinguish between an object and an instance
 
 **Instantiation**, or to create an **instance**, is essentially what we do when we use the class blueprint to create an **object**.
