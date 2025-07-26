@@ -9,7 +9,7 @@ function Navbar() {
 		<div id="Navbar">
 			<div><a href="/"><Image src={HomeIcon} alt="Home Icon"/></a></div>
 			<div>
-				<a href="https://github.com/realhuman101/Notes/" target="_blank"><Image src={GithubLogo} alt=""/></a>
+				<a href="https://github.com/bannev1/Notes/" target="_blank"><Image src={GithubLogo} alt=""/></a>
 			</div>
 		</div>
 		<div id="navFill"></div>
