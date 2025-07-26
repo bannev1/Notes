@@ -6,7 +6,7 @@ function Footer() {
 		<div id='Footer'>
 			<div>IB Revision Notes</div>
 			<div>
-				Made by <a href="https://realhuman101.github.io/" target='_blank'>Valentina Banner</a>
+				Made by <a href="https://valentinabanner.com/" target='_blank'>Valentina Banner</a>
 			</div>
 		</div>
 		<div id="footerFill"></div>
